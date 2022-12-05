@@ -10,6 +10,9 @@ mod library;
 #[path = "../src/day01.rs"]
 mod day01;
 
-criterion_group!(benches, day01::benchmark);
+#[path = "../src/day02.rs"]
+mod day02;
+
+criterion_group!(benches, day01::benchmark, day02::benchmark);
 
 criterion_main!(benches);
