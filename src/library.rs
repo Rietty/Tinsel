@@ -19,6 +19,7 @@ pub fn read_file(path: &str) -> Vec<String> {
 }
 
 // Function to split a string into a tuple using a given delimiter.
+#[allow(unused)]
 pub fn split_string(s: &str, delim: &str) -> (String, String) {
     let mut split = s.split(delim);
     let first = split.next().unwrap().to_string();
@@ -27,6 +28,7 @@ pub fn split_string(s: &str, delim: &str) -> (String, String) {
 }
 
 // Function that will take a line of data and use split_string to split it into two tuples of strings.
+#[allow(unused)]
 pub fn split_line(s: &str, fdelim: &str, sdelim: &str) -> ((String, String), (String, String)) {
     let mut split = s.split(fdelim);
     let first = split_string(split.next().unwrap(), sdelim);
